@@ -1,0 +1,12 @@
+.CalculatorDisplay {
+    border: pink solid 9px;
+    text-align: right;
+    padding: 10px;
+    font-size: 40px;
+    color: dimgray;
+    font-weight: bold;
+    margin-top:50px;
+    margin-left:200px;
+    margin-right:200px;
+
+}
