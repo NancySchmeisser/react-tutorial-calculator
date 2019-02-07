@@ -26,52 +26,52 @@ class CalculatorInput extends Component<CalculatorInputProps> {
                         <button className="btn btn-info" onClick={this.handleButtonclick}>8</button>
                     </div>
                     <div className="col">
-                        <button className="btn btn-info">9</button>
+                        <button className="btn btn-info" onClick={this.handleButtonclick}>9</button>
                     </div>
                     <div className="col">
-                        <button className="btn btn-info">+</button>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col">
-                        <button className="btn btn-info">4</button>
-                    </div>
-                    <div className="col">
-                        <button className="btn btn-info">5</button>
-                    </div>
-                    <div className="col">
-                        <button className="btn btn-info">6</button>
-                    </div>
-                    <div className="col">
-                        <button className="btn btn-info">-</button>
+                        <button className="btn btn-info" onClick={this.handleButtonclick}>+</button>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col">
-                        <button className="btn btn-info">1</button>
+                        <button className="btn btn-info" onClick={this.handleButtonclick}>4</button>
                     </div>
                     <div className="col">
-                        <button className="btn btn-info">2</button>
+                        <button className="btn btn-info" onClick={this.handleButtonclick}>5</button>
                     </div>
                     <div className="col">
-                        <button className="btn btn-info">3</button>
+                        <button className="btn btn-info" onClick={this.handleButtonclick}>6</button>
                     </div>
                     <div className="col">
-                        <button className="btn btn-info">x</button>
+                        <button className="btn btn-info" onClick={this.handleButtonclick}>-</button>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col">
-                        <button className="btn btn-info">0</button>
+                        <button className="btn btn-info" onClick={this.handleButtonclick}>1</button>
                     </div>
                     <div className="col">
-                        <button className="btn btn-info">.</button>
+                        <button className="btn btn-info" onClick={this.handleButtonclick}>2</button>
                     </div>
                     <div className="col">
-                        <button className="btn btn-info">=</button>
+                        <button className="btn btn-info" onClick={this.handleButtonclick}>3</button>
                     </div>
                     <div className="col">
-                        <button className="btn btn-info">/</button>
+                        <button className="btn btn-info" onClick={this.handleButtonclick}>x</button>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col">
+                        <button className="btn btn-info" onClick={this.handleButtonclick}>0</button>
+                    </div>
+                    <div className="col">
+                        <button className="btn btn-info" onClick={this.handleButtonclick}>.</button>
+                    </div>
+                    <div className="col">
+                        <button className="btn btn-info" onClick={this.handleButtonclick}>=</button>
+                    </div>
+                    <div className="col">
+                        <button className="btn btn-info" onClick={this.handleButtonclick}>/</button>
                     </div>
                 </div>
             </div>
