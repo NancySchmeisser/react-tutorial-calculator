@@ -1,0 +1,13 @@
+.btn {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.CalculatorInput {
+    color: dimgray;
+    font-weight: bold;
+    margin-top:50px;
+    margin-left:200px;
+    margin-right:200px;
+}
