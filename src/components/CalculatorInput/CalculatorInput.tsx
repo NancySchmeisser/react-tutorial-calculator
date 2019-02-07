@@ -3,7 +3,7 @@ import "./CalculatorInput.css";
 
 
 interface CalculatorInputProps {
-
+    handleKeyPress : (key: string) => void,
 }
 
 
@@ -13,6 +13,7 @@ class CalculatorInput extends Component<CalculatorInputProps> {
 
     handleButtonclick = (event: React.MouseEvent<HTMLButtonElement>) => {
         console.log(event.currentTarget.innerText);
+        this.props.handleKeyPress(event.currentTarget.innerText)
     }
 
     render() {
@@ -29,7 +30,7 @@ class CalculatorInput extends Component<CalculatorInputProps> {
                         <button className="btn btn-info" onClick={this.handleButtonclick}>9</button>
                     </div>
                     <div className="col">
-                        <button className="btn btn-info" onClick={this.handleButtonclick}>+</button>
+                        <button className="btn btn-success" onClick={this.handleButtonclick}>+</button>
                     </div>
                 </div>
                 <div className="row">
@@ -43,7 +44,7 @@ class CalculatorInput extends Component<CalculatorInputProps> {
                         <button className="btn btn-info" onClick={this.handleButtonclick}>6</button>
                     </div>
                     <div className="col">
-                        <button className="btn btn-info" onClick={this.handleButtonclick}>-</button>
+                        <button className="btn btn-success" onClick={this.handleButtonclick}>-</button>
                     </div>
                 </div>
                 <div className="row">
@@ -57,7 +58,7 @@ class CalculatorInput extends Component<CalculatorInputProps> {
                         <button className="btn btn-info" onClick={this.handleButtonclick}>3</button>
                     </div>
                     <div className="col">
-                        <button className="btn btn-info" onClick={this.handleButtonclick}>x</button>
+                        <button className="btn btn-success" onClick={this.handleButtonclick}>x</button>
                     </div>
                 </div>
                 <div className="row">
@@ -65,13 +66,13 @@ class CalculatorInput extends Component<CalculatorInputProps> {
                         <button className="btn btn-info" onClick={this.handleButtonclick}>0</button>
                     </div>
                     <div className="col">
-                        <button className="btn btn-info" onClick={this.handleButtonclick}>.</button>
+                        <button className="btn btn-success" onClick={this.handleButtonclick}>.</button>
                     </div>
                     <div className="col">
-                        <button className="btn btn-info" onClick={this.handleButtonclick}>=</button>
+                        <button className="btn btn-success" onClick={this.handleButtonclick}>=</button>
                     </div>
                     <div className="col">
-                        <button className="btn btn-info" onClick={this.handleButtonclick}>/</button>
+                        <button className="btn btn-success" onClick={this.handleButtonclick}>/</button>
                     </div>
                 </div>
             </div>

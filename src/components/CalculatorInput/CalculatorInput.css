@@ -1,10 +1,12 @@
 .btn {
+    
     width: 100px;
     height: 100px;
     margin: 10px;
 }
 
 .CalculatorInput {
+    border: pink solid 9px;
     color: dimgray;
     font-weight: bold;
     margin-top:50px;

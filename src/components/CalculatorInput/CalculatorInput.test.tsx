@@ -9,7 +9,7 @@ Enzyme.configure({ adapter: new Adapter() });
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<CalculatorInput />, div);
+  ReactDOM.render(<CalculatorInput handleKeyPress={(key:string)=>{}}/>, div);
   ReactDOM.unmountComponentAtNode(div);
 });
 
