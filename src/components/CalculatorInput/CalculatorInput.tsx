@@ -12,8 +12,8 @@ interface CalculatorInputProps {
 class CalculatorInput extends Component<CalculatorInputProps> {
 
     handleButtonclick = (event: React.MouseEvent<HTMLButtonElement>) => {
-        console.log(event.currentTarget.innerText);
-        this.props.handleKeyPress(event.currentTarget.innerText)
+        console.log(event.currentTarget.textContent);
+        this.props.handleKeyPress(event.currentTarget.textContent )
     }
 
     render() {

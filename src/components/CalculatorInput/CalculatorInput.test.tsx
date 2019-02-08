@@ -13,3 +13,13 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
+it ('calls handleKeyClick', () => {
+  const mockHandleKeyClick = jest.fn( key => { })
+  const wrapper = mount (<CalculatorInput handleKeyPress={mockHandleKeyClick}/>)
+  expect(wrapper.find('button').first().text()).toBe("7")
+
+  wrapper.find('button').first().simulate('click')
+  expect (mockHandleKeyClick.mock.calls.length).toBe(1)
+  expect (mockHandleKeyClick.mock.calls[0].length).toBe(1)
+  expect (mockHandleKeyClick.mock.calls[0][0]).toEqual("7")
+})
