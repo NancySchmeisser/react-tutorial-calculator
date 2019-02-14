@@ -12,7 +12,7 @@ class CalculatorDisplay extends Component <CalculatorDisplayProps> {
   render() {
     return (
       <div className="CalculatorDisplay">
-        {this.props.operator == "" ? this.props.currentValue.toString() : `${this.props.currentValue} ${this.props.operator} ${this.props.newValue}`}
+        {this.props.operator == "" ? this.props.currentValue.toString() : this.props.newValue == 0 ?  `${this.props.currentValue} ${this.props.operator}`: `${this.props.currentValue} ${this.props.operator} ${this.props.newValue}`}
       </div>
     );
   }

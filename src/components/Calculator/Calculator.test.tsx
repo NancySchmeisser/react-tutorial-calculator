@@ -27,7 +27,7 @@ it ('calculates correctly', ()=>{
 
   var btnPlus =input.find('button').findWhere( btn => btn.text()=="+");
   btnPlus.simulate('click')
-  expect(display.text()).toBe('7 + 0')
+  expect(display.text()).toBe('7 +')
 
 
 })
