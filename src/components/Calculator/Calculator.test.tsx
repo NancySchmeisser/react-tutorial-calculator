@@ -29,5 +29,25 @@ it ('calculates correctly', ()=>{
   btnPlus.simulate('click')
   expect(display.text()).toBe('7 +')
 
+})
+
+it ('calculates correctly', ()=>{
+  const wrapper= mount(<Calculator/>)
+  const display= wrapper.find('CalculatorDisplay')
+  const input= wrapper.find('CalculatorInput')
+
+  // initially there is a 0
+  expect(display.text()).toBe('0')
+
+  var btn7 =input.find('button').findWhere( btn => btn.text()=="7");
+  btn7.simulate('click')
+  expect(display.text()).toBe('7')
+
+  var btnDot =input.find('button').findWhere( btn => btn.text()==".");
+  btnDot.simulate('click')
+  expect(display.text()).toBe('7.')
+
+  btn7.simulate('click')
+  expect(display.text()).toBe('7.7')
 
 })

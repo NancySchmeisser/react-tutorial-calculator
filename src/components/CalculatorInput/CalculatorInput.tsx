@@ -3,7 +3,7 @@ import "./CalculatorInput.css";
 
 
 interface CalculatorInputProps {
-    handleKeyPress : (key: string) => void,
+    handleKeyPress: (key: string) => void,
 }
 
 
@@ -12,8 +12,8 @@ interface CalculatorInputProps {
 class CalculatorInput extends Component<CalculatorInputProps> {
 
     handleButtonclick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    
-        this.props.handleKeyPress(event.currentTarget.textContent )
+
+        this.props.handleKeyPress(event.currentTarget.textContent)
     }
 
     render() {
@@ -74,6 +74,8 @@ class CalculatorInput extends Component<CalculatorInputProps> {
                     <div className="col">
                         <button className="btn btn-success" onClick={this.handleButtonclick}>/</button>
                     </div>
+                </div>
+                <div className="row">
                     <div className="col">
                         <button className="btn btn-danger" onClick={this.handleButtonclick}>Reset</button>
                     </div>
